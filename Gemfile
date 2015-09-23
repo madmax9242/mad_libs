@@ -14,6 +14,8 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 # Trying to use mongoDB with rails
+gem 'mongo'
+# Object Mapping for Ruby
 gem 'mongo_mapper'
 gem 'bson_ext', '1.12.3'
 # Use jquery as the JavaScript library
