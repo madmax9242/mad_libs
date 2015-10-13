@@ -1,1 +1,11 @@
-_form.html.erb
+<% form_for @story do |f| %>
+	<%= f.error_messages %>
+	<h2>Fill in the blanks with the appropriate sentence component.</h2>
+	<p>
+		Noun 1<br />
+		<%= f.text_field :nounOne %><br />
+		Noun 2<br />
+		<%= f.text_field :nounTwo %><br />
+
+	</p>
+<% end %>
