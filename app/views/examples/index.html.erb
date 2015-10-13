@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Examples</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nounone</th>
+      <th>Nountwo</th>
+      <th>Nounthree</th>
+      <th>Verbone</th>
+      <th>Verbtwo</th>
+      <th>Verbthree</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @examples.each do |example| %>
+      <tr>
+        <td><%= example.nounOne %></td>
+        <td><%= example.nounTwo %></td>
+        <td><%= example.nounThree %></td>
+        <td><%= example.verbOne %></td>
+        <td><%= example.verbTwo %></td>
+        <td><%= example.verbThree %></td>
+        <td><%= link_to 'Show', example %></td>
+        <td><%= link_to 'Edit', edit_example_path(example) %></td>
+        <td><%= link_to 'Destroy', example, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Example', new_example_path %>

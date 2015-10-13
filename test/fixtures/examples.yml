@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nounOne: MyString
+  nounTwo: MyString
+  nounThree: MyString
+  verbOne: MyString
+  verbTwo: MyString
+  verbThree: MyString
+
+two:
+  nounOne: MyString
+  nounTwo: MyString
+  nounThree: MyString
+  verbOne: MyString
+  verbTwo: MyString
+  verbThree: MyString
