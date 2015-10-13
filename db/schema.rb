@@ -11,10 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150922234701) do
+ActiveRecord::Schema.define(version: 20151013231145) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "examples", force: :cascade do |t|
+    t.string   "nounOne"
+    t.string   "nounTwo"
+    t.string   "nounThree"
+    t.string   "verbOne"
+    t.string   "verbTwo"
+    t.string   "verbThree"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "stories", force: :cascade do |t|
     t.string "nounOne"
