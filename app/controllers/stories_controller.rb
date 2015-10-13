@@ -1,7 +1,7 @@
 class StoriesController < ApplicationController
 
   def index
-  	@stories = Story.All
+  	@stories = Story.all
   end
 
   def show
@@ -13,6 +13,15 @@ class StoriesController < ApplicationController
   end
 
   def create
+    @story = Story.new(story_params)
+
+    respond_to do |format|
+      if @story.save
+        format.html { redirect_to @story, notice: 'Story generated.' }
+      else
+        format.html { render :new }
+      end
+    end
   end
 
   def edit
@@ -23,4 +32,9 @@ class StoriesController < ApplicationController
 
   def destroy
   end
+
+  private
+    def story_params 
+      params.require(:form).permit(:nounOne, :nounTwo, :nounThree, :nounFour, :verbOne, :verbTwo, :verbThree, :verbFour, :verbFive, :adjectiveOne, :adjectiveTwo, :adjectiveThree, :adverbOne, :adverbTwo, :adverbThree)
+    end
 end

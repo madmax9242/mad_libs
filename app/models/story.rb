@@ -9,10 +9,12 @@ class Story
   key :verbTwo, String, :required => true
   key :verbThree, String, :required => true
   key :verbFour, String, :required => true
+  key :verbFive, String, :required => true
   key :adjectiveOne, String, :required => true
   key :adjectiveTwo, String, :required => true
   key :adjectiveThree, String, :required => true
   key :adverbOne, String, :required => true
   key :adverbTwo, String, :required => true
+  key :adverbThree, String, :required => true
 
 end
