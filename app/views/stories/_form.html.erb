@@ -1,10 +1,12 @@
 <% form_for @story do |f| %>
 	<%#= f.error_messages %>
-	<p>
-		<strong>Noun 1</strong><br />
-		<%= f.text_field :nounOne %><br />
-		<strong>Noun 2</strong><br />
-		<%= f.text_field :nounTwo %><br />
+	<div class="field">
+		<p>
+			<strong>Noun 1</strong><br />
+			<%= f.text_field :nounOne %><br />
+			<strong>Noun 2</strong><br />
+			<%= f.text_field :nounTwo %><br />
 
-	</p>
+		</p>
+	</div>
 <% end %>
