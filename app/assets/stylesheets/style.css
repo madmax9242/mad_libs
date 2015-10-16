@@ -1,8 +1,15 @@
+.bold-text {
+	font-weight: bold;
+}
+
 .center {
 	text-align: center;
 	margin: 0 auto;
 }
 
-.bold-text {
-	font-weight: bold;
+.main-text {
+	max-width: 80%;
+	margin: 0 auto;
+	background-color: lightblue;
+	
 }

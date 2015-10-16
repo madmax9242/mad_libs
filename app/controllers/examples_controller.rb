@@ -10,6 +10,7 @@ class ExamplesController < ApplicationController
   # GET /examples/1
   # GET /examples/1.json
   def show
+    #lowercase
   end
 
   # GET /examples/new
@@ -70,5 +71,9 @@ class ExamplesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def example_params
       params.require(:example).permit(:nounOne, :nounTwo, :nounThree, :nounFour, :verbOne, :verbTwo, :verbThree, :verbFour, :verbFive, :adjectiveOne, :adjectiveTwo, :adjectiveThree, :adverbOne, :adverbTwo, :adverbThree)
+    end
+
+    def lowercase
+      #@example.each { |entry| entry.downcase! }
     end
 end
