@@ -1,40 +1,8 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Nounone:</strong>
-  <%#= @example.nounOne %>
-</p>
-
-<p>
-  <strong>Nountwo:</strong>
-  <%#= @example.nounTwo %>
-</p>
-
-<p>
-  <strong>Nounthree:</strong>
-  <%#= @example.nounThree %>
-</p>
-
-<p>
-  <strong>Verbone:</strong>
-  <%#= @example.verbOne %>
-</p>
-
-<p>
-  <strong>Verbtwo:</strong>
-  <%#= @example.verbTwo %>
-</p>
-
-<p>
-  <strong>Verbthree:</strong>
-  <%#= @example.verbThree %>
-</p>
-
-
 <h1 class="center">The Three Little Pigs</h1>
 
-<p>Once upon a time, there were three <span class="bold-text"><%= @example.adjectiveOne %></span> pigs. One day, their mother said, "You are all grown up and must <span class="bold-text"><%= @example.verbOne %> on your own." So they left to <span class="bold-text"><%= @example.verbTwo %></span> their houses.  The first little pig only wanted to work all day and quickly built his house out of <span class="bold-text"><%= @example.nounOne %></span>.  The second little pig wanted to <span class="bold-text"><%= @example.verbThree %></span> all day so he built his house with <span class="bold-text"><%= @example.nounTwo %></span>. The third little pig knew that a wolf leved nearby and worked <span class="bold-text"><%= @example.adverbOne %></span> to build his house out of <span class="bold-text"><%= @example.nounFour %></span>. One day, the wolf knocked on the first pig's house and said, "Let me in or I'll <span class="bold-text"><%= @example.verbFour %></span> your house down!" The pig didn't, so the wolf blew down the house. The wolf knocked on the second pig's <span class="bold-text"><%= @example.nounThree %></span> and said, "Let me in or I'll <span class="bold-text"><%= @example.verbFive %></span> your house down!" The pig didn't, so the wolf blew the house down. Finally, the wolf knocked <span class="bold-text"><%= @example.adverbTwo %> on the third <span class="bold-text"><%= @example.adjectiveTwo %></span> pig's door. He said, "Let me in or I'll blow your house down!" The pig didn't and the wolf huffed and puffed but could not blow the house down. The pigs went on to live <span class="bold-text"><%= @example.adverbThree %></span> ever after.</p>
-
+<div class="main-text">
+  <p>Once upon a time, there were three <span class="bold-text"><%= @example.adjectiveOne.downcase! %></span> pigs. One day, their mother said, "You are all grown up and must <span class="bold-text"><%= @example.verbOne.downcase! %></span> on your own." So they left to <span class="bold-text"><%= @example.verbTwo.downcase! %></span> their houses.  The first little pig only wanted to work all day and quickly built his house out of <span class="bold-text"><%= @example.nounOne.downcase! %></span>.  The second little pig wanted to <span class="bold-text"><%= @example.verbThree.downcase! %></span> all day so he built his house with <span class="bold-text"><%= @example.nounTwo.downcase! %></span>. The third little pig knew that a wolf leved nearby and worked <span class="bold-text"><%= @example.adverbOne.downcase! %></span> to build his house out of <span class="bold-text"><%= @example.nounFour.downcase! %></span>. One day, the wolf knocked on the first pig's house and said, "Let me in or I'll <span class="bold-text"><%= @example.verbFour.downcase! %></span> your house down!" The pig didn't, so the wolf blew down the house. The wolf knocked on the second pig's <span class="bold-text"><%= @example.nounThree.downcase! %></span> and said, "Let me in or I'll <span class="bold-text"><%= @example.verbFive.downcase! %></span> your house down!" The pig didn't, so the wolf blew the house down. Finally, the wolf knocked <span class="bold-text"><%= @example.adverbTwo.downcase! %></span> on the third <span class="bold-text"><%= @example.adjectiveTwo.downcase! %></span> pig's door. He said, "Let me in or I'll blow your house down!" The pig didn't and the wolf huffed and puffed but could not blow the house down. The pigs went on to live <span class="bold-text"><%= @example.adverbThree.downcase! %></span> ever after.</p>
+</div>
 <h2 class="center">The End</h2>
 
 <%= link_to 'Edit', edit_example_path(@example) %> |
