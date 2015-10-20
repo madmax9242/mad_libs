@@ -1,1 +1,1 @@
-json.extract! @example, :id, :nounOne, :nounTwo, :nounThree, :verbOne, :verbTwo, :verbThree, :created_at, :updated_at
+json.extract! @example, :id, :nounOne, :nounTwo, :nounThree, :nounFour, :verbOne, :verbTwo, :verbThree, :verbFour, :verbFive, :adjectiveOne, :adjectiveTwo, :adjectiveThree, :adverbOne, :adverbTwo, :adverbThree, :created_at, :updated_at
